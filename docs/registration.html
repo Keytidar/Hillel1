@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+<body>
+    <header>
+        <span class="login-text">Login</span>
+        <span class="decorative-text">I</span>
+        <span class="register-text">Register</span>
+    </header>
+    <div class="border-window">
+        <div class="rectangle"></div>
+        <div class="bottom-rectangle"></div>
+        <img src="../pictures/X.png" alt="closing-button" class="closing-button">
+    </div>
+
+    <div id="registration_field">
+        <label for="username">
+            <span class="registration-label">Enter your email and password to register.</span>
+        </label>
+        <form action="POST" method="post" id="reg">
+
+
+            <input
+            class="username-field" type="text" name="username" id="username" placeholder="Username">
+
+            <input 
+            class="email-field" type="email" name="email" id="email" placeholder="Enter your email address">
+
+
+            <div class="password-container">
+                <img
+                alt="hide icon"
+                class="hide-icon" 
+                src="../pictures/Hide.png">
+                <input
+                class="password-field" type="password" id="password" placeholder="Password" >
+            </div>
+                <input
+               class="confirm-password-field"
+                type="password" name="confirm_password"
+                 id="confirm_password"
+                  placeholder="Confirm Password">
+
+            <button
+            class="reg-button" type="submit">
+                <span class="reg-button-text">
+                Register
+                </span>
+            </button>
+        </form>
+    </div>
+        <div class="or-reg-with-text">
+            <div class="lineleft"></div>
+            <div class="lineright"></div>
+            <span>
+                Or register with
+            </span>
+        </div>
+    <form action="post" id="social_login_form">
+        <button class="google-button">
+            <img class="google-logo" src="../pictures/google1.png" alt="google-logo">
+            Continue with Google
+        </button>
+        <button class="facebook-button">
+            <img src="../pictures/facebook1.svg" alt="facebook logo">
+            <span class="facebook-text">Continue with facebook</span>
+        </button>
+    </form>
+    </div>
+</body>
+</html>

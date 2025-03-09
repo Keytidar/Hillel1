@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'Cera pro';
+  src: url('CeraPro-Medium.woff') format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+
+
+.border-window {
+  width: 500px;
+  height: 656px;
+  background-color: white;
+  position:absolute;
+  z-index: -1;
+}
+.bottom-rectangle {
+  width: 500px;
+height: 10px;
+top: 646px;
+background-color:#46A358;
+position:absolute;
+;
+}
+.closing-button {
+  right: 13px;
+  top: 13px;
+  position:absolute;
+}
+header {
+  margin-bottom: 40px;
+}
+
+.login-text {
+        color: #3D3D3D;
+        font-family: 'Cera pro';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px; /* 80% */
+}
+
+.decorative-text {
+  color: #3D3D3D;
+  font-family: 'Cera Pro';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 16px; /* 88.889% */;
+}
+
+.register-text {
+  color: #46A358;
+  font-family: 'Cera Pro';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 80% */
+}
+
+.registration-label {
+  color: #3D3D3D;
+  font-family: 'Cera Pro';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+  margin-top: 40px;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.username-field {
+  width: 300px;
+height: 40px;
+flex-shrink: 0;
+margin-top: 14px;
+}
+
+.email-field {
+  width: 300px;
+height: 40px;
+flex-shrink: 0;
+}
+
+.hide-icon {
+  right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.password-container {
+  position: relative;
+}
+.password-field {
+  width: 300px;
+height: 40px;
+flex-shrink: 0;
+}
+
+.confirm-password-field {
+  width: 300px;
+height: 40px;
+flex-shrink: 0;
+}
+
+.reg-button {
+  width: 300px;
+height: 45px;
+flex-shrink: 0;
+border-color: #EAEAEA;
+border-radius: 5px;
+background: #46A358;
+}
+.reg-button-text {
+  color: #FFF;
+font-family: "Cera Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 100% */
+}
+.or-reg-with-text {
+  color: #3D3D3D;
+  font-family: "Cera Pro";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.google-button {
+  width: 300px;
+height: 40px;
+flex-shrink: 0;
+background: white;
+color: #727272;
+text-align: center;
+font-family: "Cera Pro";
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 123.077% */
+border-radius: 5px;
+border: 1px solid #EAEAEA;
+}
+.facebook-button {
+  width: 300px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 5px;
+background: white;
+border: 1px solid #EAEAEA;
+}
+.facebook-text {
+  color: #727272;
+text-align: center;
+font-family: "Cera Pro";
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 123.077% */
+
+}
+.google-logo {
+  width: 20px;
+height: 20px;
+top: 10px;
+left: 69px;
+}
+
+#reg {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+#social_login_form {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+
+.closing-button {
+  right: 13px;
+  top:13px;
+}
+/* pseudo-elements */
+
+::placeholder {
+  color: #A5A5A5;
+font-family: "Cera Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 114.286% */
+}

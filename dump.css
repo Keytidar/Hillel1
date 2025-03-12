@@ -167,94 +167,65 @@ nav {
   justify-content: flex-end;
 }
 
+.second-header {
+  display: flex;
+  margin-left: 120px;
+  margin-right: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .sidebar {
   display: flex;
   flex-direction: row;
-  padding: 80px 0;
-  background-color: #F9F9F9;
-  padding: 0 50px 0 120px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
-.sidebar-top {
-  display: flex;
-  flex-direction: column;
-}
-
-.heading {
+.headings {
   color: #3D3D3D;
-  font-family: "Cera Pro";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px; /* 88.889% */
-  width: 150%;
-  margin-top: 30px;
-  margin-bottom: 7px;
+font-family: "Cera Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 88.889% */
+flex-direction: column;
 }
 
-.category-name {
+.sidebar-list {
   color: #3D3D3D;
 font-family: "Cera Pro";
 font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: 40px;
-margin-right: 140px;
-margin-left: 10px;
+margin-right: 137px;
 }
 
-.category-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.category-count {
-  color: #3D3D3D;
-  font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: right;
-}
-
-.category-name.active {
+.categories-list.active {
   color: #46A358;
 font-family: "Cera Pro";
 font-size: 15px;
 font-style: normal;
 font-weight: 700;
 line-height: 40px; /* 266.667% */
-margin-left: 10px;
 }
-.price-block {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 35px;
-  margin-left: 10px;
-
-}
-
 .price {
-    color: #3D3D3D;
-  font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px; /* 106.667% */
+  color: #3D3D3D;
+font-family: "Cera Pro";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 106.667% */
 }
 .price2 {
-    color: #46A358;
-  font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-}
-
-.money-range {
-  max-width: 80%;
+  color: #46A358;
+font-family: "Cera Pro";
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
 }
 
 .filter-button {
@@ -262,8 +233,31 @@ margin-left: 10px;
   background: #46A358;
   width: 90px;
   height: 35px;
-  margin-top: 15px;
-  margin-bottom: 45px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
+
+.supersale-rectangle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #46A358;
+  width: 100px;
+  height: 100px;
+  color: #FFF;
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
+
 }
 
 .category-count.active {
@@ -276,49 +270,20 @@ font-weight: 700;
 line-height: 40px; /* 266.667% */
 }
 
-.banner-rectangle {
-  width: 310px;
-  height: 470px;
-  flex-shrink: 0;
-  background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
-}
-
-.super-sale {
-  color: #46A358;
-font-family: "Hanging Letters";
-font-size: 65px;
+.category-count {
+  color: #3D3D3D;
+font-family: "Cera Pro";
+font-size: 15px;
 font-style: normal;
 font-weight: 400;
-line-height: 65px; /* 100% */
+line-height: 40px;
+flex-direction: row;
 }
 
-.discount {
-  color: #3D3D3D;
-  text-align: center;
-  font-family: "Cera Pro";
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px; /* 69.565% */
-  max-width: 105%;
-  text-align: right;
-}
-.wrapper {
-  padding-right: 120px;
-}
 
-.shop-header {
+.sizes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 120px 40px 50px;
-  gap: 40px;
+  gap: 10px;
 }
 
-.sorting {
-  display: flex;
-}
-
-.goods {
-  display: flex;
-}

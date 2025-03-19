@@ -36,12 +36,17 @@
   font-weight: 400;
 }
 
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: none;
   list-style-type: none;
+}
+
+body {
+  font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 header {
@@ -62,7 +67,11 @@ nav {
 .header-item.sorter {
   margin-left: auto;
 }
-
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
 .login-button {
   display: flex;
   align-items: center;
@@ -88,6 +97,40 @@ nav {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.list-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  background: #EDF6EE;
+}
+
+.dropdown-item {
+  padding: 7px 88px 8px 14px;
+
+  color: #3D3D3D;
+  font-family: "Encode Sans Expanded";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dropdown-both {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  position: absolute;
+}
+
+.dropdown-second {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: #EDF6EE;
 }
 
 .list-item.active {
@@ -305,6 +348,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 65px; /* 100% */
 margin-right: 20px;
+margin-top: 18px;
 }
 
 .discount {
@@ -408,8 +452,9 @@ margin-right: 20px;
 }
 
 .pages-item {
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
+  padding: 7.5px 7.5px;
   flex-shrink: 0;
   color: #3D3D3D;
   font-family: "Cera Pro";
@@ -420,6 +465,7 @@ margin-right: 20px;
 }
 
 .pages-item.active {
+  padding: 7.5px;
   border-radius: 4px;
   background: #46A358;
   color: #FFF;
@@ -442,10 +488,6 @@ margin-right: 20px;
 }
 
 .find-more img {
-  /* position: relative;
-  min-height: 116%;
-  min-width: 116%;
-  overflow: hidden; */
 }
 
 .find-more-text {
@@ -458,6 +500,9 @@ margin-right: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 35px 120px 100px 120px;
+  gap: 45px;
+  justify-content: center;
 }
 
 .blog-heads {
@@ -467,12 +512,218 @@ margin-right: 20px;
   margin-bottom: 35px;
   gap: 15px;
 }
+
+.blog-heads-header {
+  color: #3D3D3D;
+  text-align: center;
+  font-family: "Cera Pro";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 53.333% */
+}
+
+.blog-heads-span {
+  color: #727272;
+  text-align: center;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
 .blog-links {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  max-width: 268px;
+  justify-content: space-between;
+}
+
+
+.blog-date {
+  color: #46A358;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+}
+
+.blog-post-header {
+  color: #3D3D3D;
+  font-family: "Cera Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 130% */
+  }
+
+.blog-post-span {
+  color: #727272;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.blog-post-read-more {
+  color: #3D3D3D;
+font-family: "Cera Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 114.286% */;
+margin-top: auto;
+}
+
+.blog-post-read-more.active {
+  color: #46A358;
+font-family: "Cera Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 114.286% */
+align-items: flex-end;
+margin-top: auto;
+}
+
+.blog-text {
+  display: flex;
+}
+
+.newsletters {
+  margin: 100px 120px 0px 120px;
+}
+
+.svg-block {
+  display: flex;
+  position: relative;
+}
+
+.svg-block svg {
+  position: absolute;
+}
+
+/* .svg-circle {
+  position: absolute;
+  align-items: flex-start;
+}
+
+.svg-head {
+  position: absolute;
+}
+
+.svg-base {
+  position: absolute;
+} */
+
+.svg-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.svg-header {
+  color: #3D3D3D;
+  font-family: "Cera Pro";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 94.118% */
+  margin-top: 15px;
+}
+
+.svg-span {
+  color: #727272;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  max-width: 204px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  background: rgba(70, 163, 88, 0.10);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 33px;
+  gap: 90px;
+}
+
+.logo {
+  margin-left:23px;
+}
+
+.footer {
+  max-width: 175px;
+  color: #3D3D3D;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
   align-items: center;
 }
 
-.blog-links img {
-  display: none;
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 155px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-bottom: 27px;
+  border-bottom: solid 1px rgba(70, 163, 88, 0.20);
+}
+.footer-li.active {
+  color: #3D3D3D;
+  font-family: "Cera Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 88.889% */
+}
+
+.footer-li {
+  color: #3D3D3D;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 214.286% */
+}
+
+.social-button {
+  border-radius: 4px;
+  border: 1px solid rgba(70, 163, 88, 0.20);
+  padding: 7px;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+.payment {
+  margin-top: 13px;
+}
+
+.footer-li.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  margin-bottom: 13px;
 }

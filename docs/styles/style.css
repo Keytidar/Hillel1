@@ -109,8 +109,10 @@ nav {
 }
 
 .dropdown-item {
-  padding: 7px 88px 8px 14px;
-
+  padding-left: 14px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-right: 14px;
   color: #3D3D3D;
   font-family: "Encode Sans Expanded";
   font-size: 16px;
@@ -119,11 +121,30 @@ nav {
   line-height: normal;
 }
 
+.dropdown-item.active {
+  background: #1A712A;
+  color: #FFF;
+  font-family: "Encode Sans Expanded";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-right: 88px;
+}
+
+.dropdown-item svg {
+  position: absolute;
+  right: 17px;
+  transform: translateY(50%);
+}
+
 .dropdown-both {
   display: flex;
   flex-direction: row;
   margin-top: 12px;
   position: absolute;
+  align-items: flex-start;
+  gap: 2px;
 }
 
 .dropdown-second {
@@ -134,7 +155,7 @@ nav {
 }
 
 .list-item.active {
-  padding: 8px 25px 25px;
+  padding: 8px 25px 25px ;
   display: flex;
   border-bottom: 3px solid #46A358;
   font-weight: 700;
@@ -216,8 +237,19 @@ nav {
 }
 
 .plant-image {
+  display: flex;
   margin-left: auto;
   justify-content: flex-end;
+  flex-direction: row;
+  position: relative;
+}
+
+.small-plant {
+  position: absolute;
+  max-width: 135px;
+  max-height: 135px;
+  left: 55px;
+  bottom: 40px;
 }
 
 .sidebar {
@@ -420,7 +452,19 @@ margin-top: 18px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 40px 30px 120px 50px;
+  margin: 0px 30px 120px 50px;
+  padding-top: 40px;
+  border-top:#46A358 solid 1px;
+  position: relative;
+}
+
+.good-svg-hover {
+  display: flex;
+  gap: 27px;
+  position: absolute;
+  bottom: 18%;
+  transform: translateX(50%);
+  z-index: 10;
 }
 
 .gooditem img {
@@ -494,6 +538,38 @@ margin-top: 18px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.find-more-header {
+  color: #3D3D3D;
+  text-align: right;
+  font-family: "Cera Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+}
+
+.find-more-span {
+  color: #727272;
+  text-align: right;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.find-more-button {
+  border-radius: 6px;
+  background: #46A358;
+  color: #FFF;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
 }
 
 .blogs {

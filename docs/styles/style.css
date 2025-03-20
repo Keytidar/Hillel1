@@ -767,7 +767,7 @@ margin-top: auto;
 }
 
 .footer {
-  max-width: 175px;
+  max-width: 190px;
   color: #3D3D3D;
   font-family: "Cera Pro";
   font-size: 14px;
@@ -775,7 +775,16 @@ margin-top: auto;
   font-weight: 400;
   line-height: 22px; /* 157.143% */
   align-items: center;
+  gap: 10px;
 }
+
+.footer-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
 
 .footer-links {
   display: flex;

@@ -414,6 +414,15 @@ margin-top: 18px;
   gap: 40px;
 }
 
+.sorting {
+  color: #3D3D3D;
+  font-family: "Cera Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 106.667% */
+}
+
 .header-item {
   color: #3D3D3D;
   font-family: "Cera Pro";
@@ -788,6 +797,7 @@ margin-top: auto;
   margin-right: 120px;
   margin-bottom: 33px;
   gap: 90px;
+  background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
 }
 
 .logo {

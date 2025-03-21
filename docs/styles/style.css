@@ -423,6 +423,24 @@ margin-top: 18px;
   line-height: 16px; /* 106.667% */
 }
 
+.cart-elements {
+  position: relative;
+}
+
+.cart-elements svg {
+  position: absolute;
+}
+
+.cart-number {
+  color: #FFF;
+  font-family: "Cera Pro";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  z-index: 10;
+}
+
 .header-item.active {
   color: #46A358;
   font-family: "Cera Pro";
@@ -462,6 +480,7 @@ margin-top: 18px;
   margin: 0px 30px 120px 50px;
   position: relative;
   border-top:#46A358 solid transparent 1px;
+  min-width: 258px;
 }
 
 .good-off {
@@ -613,6 +632,7 @@ margin-top: 18px;
   margin: 35px 120px 100px 120px;
   gap: 45px;
   justify-content: center;
+  align-items: baseline;
 }
 
 .blog-heads {
@@ -669,6 +689,7 @@ margin-top: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 26px; /* 130% */
+  max-width: 80%;
   }
 
 .blog-post-span {
@@ -678,6 +699,7 @@ margin-top: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 157.143% */
+  max-width: 85%;
 }
 
 .blog-post-read-more {

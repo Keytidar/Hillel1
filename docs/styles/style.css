@@ -738,7 +738,10 @@ margin-top: auto;
 
 .newsletters {
   display: flex;
+  flex-direction: row;
   margin: 100px 120px 0px 120px;
+  background: #FBFBFB;
+  justify-content: space-between;
 }
 
 .newsletters-block {
@@ -747,37 +750,49 @@ margin-top: auto;
   margin: 25px;
 }
 
-.svg-block {
-  position: relative;
+.join-newsletters {
+  /* display: flex;
+  flex-direction: column; */
+  margin: 25px;
+  max-width: 25%;
 }
 
-.svg-wrapper {
-  position: absolute;
+/* .join-wrapper {
+  padding-left: auto;
+} */
+
+
+.join-email-input {
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+  margin: 25px 0px 18px auto;
+  min-width: 72%;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: auto;
 }
 
-.svg-block-circle {
-  width: 74px;
-  height: 74.368px;
-  background-image: url('../pictures/newsletters-frames/circle.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+.join-button {
+  border-radius: 0px 6px 6px 0px;
+  background: #46A358;
+  color: #FFF;
+  font-family: "Cera Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 88.889% */
+  padding: 12px 25px;
+  }
 
-.svg-block-pot {
-  width: 55px;
-  height: 48.239px;
-  background-image: url('../pictures/newsletters-frames/pot1.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.svg-block-head {
-  width: 55px;
-  height: 48.239px;
-  background-image: url('../pictures/newsletters-frames/head1.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
+.join-newsletters ::placeholder {
+  color: #ACACAC;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
 }
 
 .svg-description {
@@ -785,8 +800,16 @@ margin-top: auto;
   flex-direction: column;
 }
 
-.wrap2 {
-  position: absolute;
+.svg-block {
+  height: 98px;
+  width: 77px;
+  background-image: 
+  url('../pictures/newsletters-frames/circle.svg'),
+  url('../pictures/newsletters-frames/head1.svg'),
+  url('../pictures/newsletters-frames/pot1.svg');
+  background-size: auto, auto, auto;
+  background-repeat: no-repeat;
+  background-position: bottom left, top 2px right, bottom 2px right 3px;
 }
 
 .svg-header {
@@ -808,6 +831,10 @@ margin-top: auto;
   line-height: 22px; /* 157.143% */
   max-width: 204px;
 }
+
+  /* .svg-span.join {
+    max-width: 40%;
+  } */
 
 .contact {
   display: flex;

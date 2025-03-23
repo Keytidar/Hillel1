@@ -812,6 +812,30 @@ margin-top: auto;
   background-position: bottom left, top 2px right, bottom 2px right 3px;
 }
 
+.svg-block.second {
+  height: 93px;
+  width: 83px;
+  background-image: 
+  url('../pictures/newsletters-frames/circle.svg'),
+  url('../pictures/newsletters-frames/head2.svg'),
+  url('../pictures/newsletters-frames/pot2.svg');
+  background-size: auto, auto, auto;
+  background-repeat: no-repeat;
+  background-position: bottom left, top right 17px, bottom 3px right;
+}
+
+.svg-block.third {
+  height: 92px;
+  width: 92px;
+  background-image: 
+  url('../pictures/newsletters-frames/circle.svg'),
+  url('../pictures/newsletters-frames/head3.svg'),
+  url('../pictures/newsletters-frames/pot3.svg');
+  background-size: auto, auto, auto;
+  background-repeat: no-repeat;
+  background-position: bottom left, top right 15px, bottom 3px right ;
+}
+
 .svg-header {
   color: #3D3D3D;
   font-family: "Cera Pro";

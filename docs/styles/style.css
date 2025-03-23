@@ -72,6 +72,32 @@ nav {
   flex-direction: row;
   gap: 30px;
 }
+
+.cart-button {
+  position: relative;
+}
+.cart-badge {
+  display: flex;
+  min-width: 12px;
+  min-height: 12px;
+  position: absolute;
+  top: -2px;
+  right: -6px;
+  justify-content: center;
+  align-items: center;
+}
+.cart-number {
+  position: absolute;
+  color: #FFF;
+  font-family: "Cera Pro";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1px;
+}
+
+
 .login-button {
   display: flex;
   align-items: center;
@@ -375,6 +401,7 @@ line-height: 40px; /* 266.667% */
   flex-shrink: 0;
   background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
   margin-top: 30px;
+  align-items: center;
 }
 
 
@@ -432,23 +459,7 @@ margin-top: 18px;
   line-height: 16px; /* 106.667% */
 }
 
-.cart-elements {
-  position: relative;
-}
 
-.cart-elements svg {
-  position: absolute;
-}
-
-.cart-number {
-  color: #FFF;
-  font-family: "Cera Pro";
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  z-index: 10;
-}
 
 .header-item.active {
   color: #46A358;
@@ -461,9 +472,6 @@ margin-top: 18px;
   }
 
 
-.sorting {
-  
-}
 
 .goods {
   display: flex;
@@ -494,6 +502,7 @@ margin-top: 18px;
 }
 
 .good-off {
+  display: none;
   position: absolute;
   background: #46A358;
   padding: 7px 8px;
@@ -507,12 +516,23 @@ margin-top: 18px;
   top: 14px;
 }
 
+
+
 .gooditem:hover{
   border-top: 1px solid #46A358;
+  display: flex;
+}
+
+.gooditem:hover .good-svg-hover {
+  display: flex;
+}
+
+.gooditem:hover .good-off {
+  display: inline;
 }
 
 .good-svg-hover {
-  display: flex;
+  display: none ;
   gap: 27px;
   position: absolute;
   bottom: 18%;
@@ -873,7 +893,6 @@ margin-top: auto;
   margin-bottom: 33px;
   gap: 90px;
   background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
-  justify-content: space-between;
 }
 
 .logo {

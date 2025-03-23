@@ -490,6 +490,7 @@ margin-top: 18px;
   position: relative;
   border-top:#46A358 solid transparent 1px;
   min-width: 258px;
+  border-top: 1px solid #46a35900;
 }
 
 .good-off {
@@ -844,6 +845,7 @@ margin-top: auto;
   font-weight: 700;
   line-height: 16px; /* 94.118% */
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .svg-span {
@@ -871,6 +873,7 @@ margin-top: auto;
   margin-bottom: 33px;
   gap: 90px;
   background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+  justify-content: space-between;
 }
 
 .logo {

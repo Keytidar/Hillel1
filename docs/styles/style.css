@@ -126,7 +126,7 @@ nav {
 }
 
 .list-dropdown {
-  display: flex;
+  display: flex ;
   flex-direction: column;
   position: relative;
   justify-content: center;
@@ -179,6 +179,11 @@ nav {
   flex-direction: column;
   background: #EDF6EE;
 }
+
+.list-item.plant-care:hover .dropdown-both {
+  background-color: red;
+}
+
 
 .list-item.active {
   padding: 8px 25px 25px ;

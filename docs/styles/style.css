@@ -165,23 +165,31 @@ nav {
 }
 
 .dropdown-both {
-  display: flex;
+  display: none;
   flex-direction: row;
-  margin-top: 12px;
+  margin-top: 0px;
   position: absolute;
   align-items: flex-start;
   gap: 2px;
 }
 
 .dropdown-second {
-  display: flex;
+  display: none;
   position: relative;
   flex-direction: column;
   background: #EDF6EE;
 }
 
 .list-item.plant-care:hover ~ .dropdown-both {
-  display: none;
+  display: flex;
+}
+
+.dropdown-both:hover {
+  display: flex;
+}
+
+.dropdown-item.active:hover ~ .dropdown-second {
+  display: flex;
 }
 
 

@@ -606,20 +606,39 @@ margin-top: 18px;
 }
 .find-more {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  flex: 1;
 }
 
-.find-more img {
+.find-more.first {
+  background-image: url('../pictures/findmore/white-vase-plant.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-width: 100%;
+}
+
+.find-more.second {
+  background-image: url('../pictures/findmore/black-vase-plant.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-width: 100%;
+} 
+
+/* .find-more img {
   max-width: 116%;
   max-height: 116%;
   margin-bottom: 10px;
-}
+} */
 
 .find-more-text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 45px;
 }
 
 .find-more-header {

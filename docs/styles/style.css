@@ -180,8 +180,8 @@ nav {
   background: #EDF6EE;
 }
 
-.list-item.plant-care:hover .dropdown-both {
-  background-color: red;
+.list-item.plant-care:hover ~ .dropdown-both {
+  display: none;
 }
 
 
@@ -612,14 +612,15 @@ margin-top: 18px;
 
 .find-more.first {
   background-image: url('../pictures/findmore/white-vase-plant.png');
+  background-position: left bottom 10px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left center;
   max-width: 100%;
 }
 
 .find-more.second {
   background-image: url('../pictures/findmore/black-vase-plant.png');
+  background-position: left bottom 8px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;

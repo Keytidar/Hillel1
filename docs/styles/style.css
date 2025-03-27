@@ -192,6 +192,9 @@ nav {
   display: flex;
 }
 
+.dropdown-both:hover .dropdown-item:hover .dropdown-item.active {
+  display: flex;
+}
 
 .list-item.active {
   padding: 8px 25px 25px ;
@@ -672,7 +675,7 @@ margin-top: 18px;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   margin-right: 30px;
-  max-width: 80%;
+  max-width: 60%;
 }
 
 .find-more-button {

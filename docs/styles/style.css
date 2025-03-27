@@ -45,6 +45,10 @@
   list-style-type: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Encode Sans Expanded', sans-serif;
 }

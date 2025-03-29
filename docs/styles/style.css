@@ -423,14 +423,12 @@ font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: 40px;
-margin-right: 140px;
 margin-left: 10px;
 }
 
 .category-item {
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
 .category-item.active {
@@ -449,6 +447,14 @@ margin-left: 10px;
   }
 }
 
+.checkbox-wrapper {
+  width: 100%;
+}
+
+.checkbox-wrapper-two {
+  display:flex;
+  justify-content: space-between;
+}
 
 .category-count {
   color: #3D3D3D;

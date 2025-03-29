@@ -45,6 +45,48 @@
   }
 }
 
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5)
+  }
+}
+
+@keyframes bright {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes rainbow {
+  14% {
+    color: red;
+  }
+  28% {
+    color: orange;
+  }
+  42% {
+    color: yellow;
+  }
+  56% {
+    color: green;
+  }
+  70% {
+    color: lightblue;
+  }
+  84% {
+    color: blue;
+  }
+  100% {
+    color: purple;
+  }
+
+}
 
 *{
   margin: 0;
@@ -57,19 +99,21 @@
 button {
   cursor: pointer;
   border: 1px solid #00000000;
+  will-change: transform;
 }
 
 button:hover {
-  animation: pulsation 1s forwards alternate;
+  animation: pulsation 1s forwards alternate, shadow 1s forwards alternate;
   border: 1px solid #000000;
 }
 
 .blog-links:hover {
-  animation: pulsation 1s forwards alternate;
+  animation: shadow 1s forwards alternate;
 }
 
 .gooditem:hover {
-  animation: pulsation 1s forwards alternate;
+  /* animation: pulsation 1s forwards alternate; */
+  animation: shadow 1s forwards alternate;
 } 
 
 body {
@@ -103,6 +147,15 @@ nav {
 .cart-button {
   position: relative;
 }
+
+.cart-button:hover {
+  animation: pulsation 1s forwards alternate;
+}
+
+.glass-svg:hover {
+  animation: pulsation 1s forwards alternate;
+}
+
 .cart-badge {
   display: flex;
   min-width: 12px;
@@ -228,6 +281,17 @@ nav {
   display: flex;
 }
 
+.category-item input:checked ~ .category-count,
+.category-item input:checked ~ .category-name {
+  color: #46A358;
+  text-align: right;
+  font-family: "Cera Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 266.667% */
+}
+
 .list-item.active {
   padding: 8px 25px 25px ;
   display: flex;
@@ -249,6 +313,7 @@ nav {
   display: flex;
   flex-direction: row;
   padding: 80px 160px;
+  background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
 }
 
 
@@ -558,13 +623,15 @@ margin-top: 18px;
 .gooditem {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   padding: 40px 0px 0px 0px;
   margin: 0px 0px 120px 50px;
   position: relative;
   border-top:#46A358 solid transparent 1px;
   min-width: 258px;
   border-top: 1px solid #46a35900;
+  will-change: transform;
+  /* animation: shadow 1s forwards alternate; */
 }
 
 .good-off {
@@ -608,6 +675,7 @@ margin-top: 18px;
 
 .gooditem img {
   padding-bottom: 40px;
+  
 }
 
 .goodname {

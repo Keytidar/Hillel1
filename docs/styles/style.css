@@ -413,6 +413,7 @@ nav {
   line-height: 16px; /* 88.889% */
   margin-top: 30px;
   margin-bottom: 7px;
+  margin-left: 18px;
 }
 
 .category-name {
@@ -429,7 +430,7 @@ margin-left: 10px;
 .category-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .category-item.active {

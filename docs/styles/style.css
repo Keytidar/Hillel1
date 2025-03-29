@@ -449,6 +449,8 @@ margin-left: 10px;
 
 .checkbox-wrapper {
   width: 100%;
+  margin-right: 25px;
+  margin-left: 30px;
 }
 
 .checkbox-wrapper-two {
@@ -480,8 +482,6 @@ margin-left: 10px;
   flex-direction: column;
   gap: 15px;
   margin-top: 35px;
-  margin-left: 10px;
-
 }
 
 .price {
@@ -491,6 +491,7 @@ margin-left: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px; /* 106.667% */
+  margin-left: 30px;
 }
 .price2 {
     color: #46A358;
@@ -502,7 +503,8 @@ margin-left: 10px;
 }
 
 .money-range {
-  max-width: 80%;
+  max-width: 65%;
+  margin-left: 30px;
 }
 
 .filter-button {
@@ -519,6 +521,7 @@ margin-left: 10px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 125% */
+  margin-left: 30px;
 }
 
 .category-count.active {

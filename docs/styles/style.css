@@ -534,15 +534,28 @@ font-weight: 700;
 line-height: 40px; /* 266.667% */
 }
 
+.checkbox-header-one input:checked + label {
+  color: #46A358;
+  font-family: "Cera Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 106.667% */
+}
+
 .banner-rectangle {
   display: flex;
   flex-direction: column;
   width: 310px;
   height: 470px;
   flex-shrink: 0;
-  background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
   margin-top: 30px;
   align-items: center;
+  background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%),
+              url('../pictures/discount-plant.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto;
 }
 
 
@@ -570,6 +583,9 @@ margin-top: 18px;
   justify-content: flex-end;
   margin-right: -15px;
 }
+
+
+
 .wrapper {
   padding-left: 50px;
 }
@@ -599,7 +615,6 @@ margin-top: 18px;
   font-weight: 400;
   line-height: 16px; /* 106.667% */
 }
-
 
 
 .header-item.active {

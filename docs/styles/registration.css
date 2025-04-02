@@ -30,6 +30,20 @@
   font-weight: 900;
 }
 
+@keyframes pulsation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+button:hover {
+  animation: pulsation 1s forwards alternate, shadow 1s forwards alternate;
+  border: 1px solid #000000;
+}
+
 body {
   display: flex;
   justify-content: center;

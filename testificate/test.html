@@ -3,12 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="./test.css">
+  <title>Login</title>
 </head>
 <body>
-  <!-- <div class="preloader"></div> -->
-   <input type="checkbox">
-    <label for="checkbox">Toggle</label>
+  <div class="rectangle-base">
+    <div class="bottom-rectangle"></div>
+    <div class="header">
+      <svg>
+        <use xlink:href="../docs/pictures/sprite.svg#close-button"></use>
+      </svg>
+      <span class="login-text">Login</span>
+      <span class="decorative-text">I</span>
+      <span class="register-text">Register</span>
+    </div>
+    <div class="inputs">
+      <span class="input-header">Enter your email and password to register.</span>
+      <input type="text" class="username-field" id="username-field" name="username-field" placeholder="Username">
+      <input type="text" class="email-field" id="email-field" name="email-field" placeholder="Enter your email address">
+      <input type="text" class="username-field" id="username-field" name="username-field" placeholder="Username">
+      <input type="text" class="username-field" id="username-field" name="username-field" placeholder="Username">
+      <button class="register-button">Register</button>
+      <span>Or register with</span>
+      <button class="google-button">Continue with Google</button>
+      <button class="facebook-button">Continue with Facebook</button>
+    </div>
+  </div>
 </body>
 </html>

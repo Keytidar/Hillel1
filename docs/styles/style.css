@@ -96,6 +96,11 @@
   list-style-type: none;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 button {
   cursor: pointer;
   border: 1px solid #00000000;
@@ -121,7 +126,8 @@ body {
 }
 
 header {
-  padding: 30px 120px;
+  padding: 30px 8.3%;
+  max-width: 100%;
 }
 
 .header {
@@ -587,7 +593,7 @@ margin-top: 18px;
 
 
 .wrapper {
-  padding-left: 50px;
+  padding-left: clamp(0px, 50px, 50px);
 }
 
 .shop-header {
@@ -616,6 +622,14 @@ margin-top: 18px;
   line-height: 16px; /* 106.667% */
 }
 
+.header-item input:checked + label.header-item {
+  color: #46A358;
+  font-family: "Cera Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 106.667% */
+}
 
 .header-item.active {
   color: #46A358;
@@ -973,6 +987,7 @@ margin-top: auto;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: auto;
+  max-width: 76%;
 }
 
 .join-button {
@@ -985,6 +1000,7 @@ margin-top: auto;
   font-weight: 700;
   line-height: 16px; /* 88.889% */
   padding: 12px 25px;
+  max-width: 24%;
   }
 
 .join-newsletters ::placeholder {
@@ -1152,4 +1168,43 @@ margin-top: auto;
   justify-content: center;
   margin-top: 7px;
   margin-bottom: 13px;
+}
+
+/* Media Queries */
+
+/* TABLETS */
+
+@media (min-width: 600px) and (max-width: 768px) {
+  nav {
+    display: flex;
+    gap: 0px;
+  }
+
+  header {
+    padding: 30px 24px;
+    max-width: 100%;
+  }
+  .logo {
+    margin-left: 0px;
+  }
+
+  .welcome{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 30px;
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+  }
+
+  .welcome img {
+    display: none;
+    max-width: 0%;
+    max-height: 0%;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    background-color: #F9F9F9;
+    padding: 0px 24px;
+  }
 }
